@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Bath Box</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="../assets/plugins/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/web/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/web/assets/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/picedit.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/magnific-popup.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/sweetalert.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/toastr.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/star-rating-svg.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/select2.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/daterangepicker.css" rel="stylesheet" />
+    <link href="../assets/plugins/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/web/assets/sass/app.css" rel="stylesheet" />
+    <link href="../assets/web/assets/sass/footer.css" rel="stylesheet" />
+    <link href="../assets/styles/custom_web.css" rel="stylesheet" />
+
+    <script src="../assets/web/assets/js/jquery.min.js"></script>
+    <script src="../assets/plugins/js/jquery.validate.min.js"></script>
+    <script src="../assets/web/assets/js/alpine.min.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/41dc596013.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="fixed-topbar">
+    <header>
+      <div class="topbar-text alert d-flex justify-content-between p-10">
+        <div></div>
+        <span style="width: 80%"
+          ><marquee>Worldwide shipping available!</marquee></span
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="$('body').addClass('no-topbar');$('.topbar-text').remove();"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 5L5 15"
+              stroke="black"
+              stroke-opacity="0.52"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5 5L15 15"
+              stroke="black"
+              stroke-opacity="0.52"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <nav class="navbar">
+        <button
+          class="responsive-toggle header-menu-toggle"
+          onclick="$('.header-menu-toggle').toggleClass('hidden')"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22 7V5H2V7H22ZM22 9V11H2V9H22ZM22 15V13H2V15H22ZM22 19V17H2V19H22Z"
+              fill="#42352E"
+            />
+          </svg>
+        </button>
+        <div class="menu menu__left">
+          <div>
+            <a
+              href="javascript:void(0)"
+              class="menu__item link-menu menu-catalog"
+              role="button"
+              id="ourProductsDropdownToggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Our Products</a
+            >
+          </div>
+          <a href="#" class="menu__item link-menu menu-our-store">Stores</a>
+          <a href="#" class="menu__item link-menu menu-about-us">About</a>
+        </div>
+        <a href="#"
+          ><img
+            class="menu__item-logo"
+            src="https://thebathbox.co.id/assets/images/logo/logo-ramadhan.png"
+            alt="The Bath Box Logo"
+        /></a>
+        <div class="menu menu__right">
+          <div class="dropdown dropdown__currency hidden">
+            <a
+              class="menu__item currency"
+              href="#"
+              role="button"
+              id="currencyDropdownToggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="me-1">IDR</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.862 4.86328L13.8048 5.80609L8.00005 11.6108L2.19531 5.80609L3.13812 4.86328L8.00005 9.72521L12.862 4.86328Z"
+                  fill="#42352E"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdownMenu">
+              <li>
+                <a
+                  class="dropdown-item with-border"
+                  href="javascript:void(0)"
+                  onclick="setCurrency('IDR')"
+                  >IDR</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item with-border"
+                  href="javascript:void(0)"
+                  onclick="setCurrency('SGD')"
+                  >SGD</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  onclick="setCurrency('USD')"
+                  >USD</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="close-dropdown-toggle">
+            <button
+              class="responsive-toggle header-menu-toggle hidden"
+              onclick="$('.header-menu-toggle').toggleClass('hidden')"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.00386 5.82149L12.3072 0.518188L13.4857 1.6967L8.18237 7L13.4857 12.3033L12.3072 13.4818L7.00386 8.17851L1.70056 13.4818L0.522051 12.3033L5.82535 7L0.522051 1.6967L1.70056 0.518188L7.00386 5.82149Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="cart mb-1 mb-xl-0 header-menu-toggle">
+            <a
+              href="#"
+              class="menu__item cart"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasCart"
+              aria-controls="offcanvasCart"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.0732 3.99864C5.8956 3.99825 5.7244 4.01835 5.56171 4.05657C5.33869 3.56503 5.04411 3.12404 4.70906 2.78899C4.14039 2.22031 3.24351 1.99609 2.00195 1.99609V3.99609C2.7604 3.99609 3.19685 4.10521 3.29485 4.2032C3.67282 4.58117 4.00195 5.34916 4.00195 5.99609L4.012 6.13752L4.99187 12.9966C3.35231 13.0817 2.08215 14.3549 2.00318 15.9465L2.00195 16.9961C2.09877 18.64 3.36471 19.9046 4.94519 19.9945L5.17221 19.9948C5.58369 21.1607 6.69526 21.9961 8.00195 21.9961C9.30817 21.9961 10.4194 21.1613 10.8312 19.9961H13.1727C13.5845 21.1613 14.6957 21.9961 16.002 21.9961C17.6588 21.9961 19.002 20.6529 19.002 18.9961C19.002 17.3392 17.6588 15.9961 16.002 15.9961C14.6957 15.9961 13.5845 16.8309 13.1727 17.9961H10.8312C10.4194 16.8309 9.30817 15.9961 8.00195 15.9961C6.69573 15.9961 5.5845 16.8309 5.17266 17.9961H5.00195C4.49196 17.9655 4.03449 17.5085 4.00016 16.9362L4.00195 15.9961C4.02892 15.4774 4.48326 15.0231 5.05151 14.9949L7.02565 14.9954L7.03995 14.9961H17.1188L17.2664 14.9493C18.0246 14.7087 18.6316 14.1377 18.919 13.3986L19.0243 13.1901L19.3666 12.512C19.7207 11.81 20.0748 11.1069 20.4199 10.4199C21.2652 8.73717 21.7967 7.66776 21.9145 7.40515C22.519 6.05654 21.2944 5.01856 20.0427 4.99645L6.0732 3.99864ZM16.7719 12.9973H7.11531C7.0511 12.9795 7.00217 12.9251 6.99259 12.8573L6.0127 5.99805L19.8958 6.99224C19.6529 7.48763 19.2113 8.37247 18.6332 9.5234L18.6187 9.55224C18.2887 10.2092 17.9351 10.9114 17.5814 11.6124L17.2396 12.2897L17.11 12.5462L17.0612 12.6595C17.009 12.8051 16.9053 12.9247 16.7719 12.9973ZM16.001 19.998C16.5533 19.998 17.001 19.5503 17.001 18.998C17.001 18.4458 16.5533 17.998 16.001 17.998C15.4487 17.998 15.001 18.4458 15.001 18.998C15.001 19.5503 15.4487 19.998 16.001 19.998ZM9.00293 18.998C9.00293 19.5503 8.55521 19.998 8.00293 19.998C7.45064 19.998 7.00293 19.5503 7.00293 18.998C7.00293 18.4458 7.45064 17.998 8.00293 17.998C8.55521 17.998 9.00293 18.4458 9.00293 18.998Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasCart"
+              aria-labelledby="offcanvasCartLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body" id="list_cart_side"></div>
+            </div>
+          </div>
+          <div class="dropdown dropdown__search">
+            <a
+              class="menu__item"
+              href="#"
+              role="button"
+              id="searchDropdownToggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.33268 15.0013C4.65078 15.0013 1.66602 12.0165 1.66602 8.33464C1.66602 4.65274 4.65078 1.66797 8.33268 1.66797C12.0146 1.66797 14.9993 4.65274 14.9993 8.33464C14.9993 9.87523 14.4768 11.2938 13.5992 12.4227L18.0886 16.912L16.9101 18.0906L12.4207 13.6012C11.2918 14.4787 9.87327 15.0013 8.33268 15.0013ZM13.3327 8.33464C13.3327 11.0961 11.0941 13.3346 8.33268 13.3346C5.57126 13.3346 3.33268 11.0961 3.33268 8.33464C3.33268 5.57321 5.57126 3.33464 8.33268 3.33464C11.0941 3.33464 13.3327 5.57321 13.3327 8.33464Z"
+                  fill="#42352E"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="dropdown dropdown__profile">
+            <a
+              href="#"
+              class="menu__item cart d-none d-lg-block"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasLogin"
+              aria-controls="offcanvasLogin"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.0007 19.1654C4.93804 19.1654 0.833984 15.0613 0.833984 9.9987C0.833984 4.93609 4.93804 0.832031 10.0007 0.832031C15.0633 0.832031 19.1673 4.93609 19.1673 9.9987C19.1673 15.0613 15.0633 19.1654 10.0007 19.1654ZM16.1669 14.2692C17.0078 13.0573 17.5007 11.5856 17.5007 9.9987C17.5007 5.85656 14.1428 2.4987 10.0007 2.4987C5.85852 2.4987 2.50065 5.85656 2.50065 9.9987C2.50065 11.5856 2.99347 13.0573 3.83441 14.2692C4.77228 13.0304 6.97615 12.4987 10.0007 12.4987C13.0251 12.4987 15.229 13.0304 16.1669 14.2692ZM14.9712 15.6152C14.7273 14.7382 12.9751 14.1654 10.0007 14.1654C7.02617 14.1654 5.27399 14.7382 5.03008 15.6152C6.3534 16.7872 8.09393 17.4987 10.0007 17.4987C11.9074 17.4987 13.6479 16.7872 14.9712 15.6152ZM10.0007 4.9987C7.98323 4.9987 6.66732 6.46183 6.66732 8.33203C6.66732 11.1882 8.1347 12.4987 10.0007 12.4987C11.8491 12.4987 13.334 11.2317 13.334 8.4987C13.334 6.60001 12.0125 4.9987 10.0007 4.9987ZM8.33398 8.33203C8.33398 10.2231 9.01583 10.832 10.0007 10.832C10.9821 10.832 11.6673 10.2474 11.6673 8.4987C11.6673 7.45738 11.0137 6.66536 10.0007 6.66536C8.94543 6.66536 8.33398 7.34522 8.33398 8.33203Z"
+                  fill="#42352E"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="responsive-menu header-menu-toggle hidden"></div>
+    </header>
+
+    <div class="preview">
+      <div
+        class="preview-card__modal modal fade"
+        id="category3Modal"
+        tabindex="-1"
+        aria-labelledby="category3Modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="category3Modal">Bodycare</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a href="#">All Bodycare</a>
+                </li>
+                <li>
+                  <a href="#">Liquid Soap</a>
+                </li>
+                <li>
+                  <a href="#">Lotion</a>
+                </li>
+                <li>
+                  <a href="#">Deodorant</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="preview-card__modal modal fade"
+        id="category1Modal"
+        tabindex="-1"
+        aria-labelledby="category1Modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="category1Modal">Skincare</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a href="#">All Skincare</a>
+                </li>
+                <li>
+                  <a href="#">Serum</a>
+                </li>
+                <li>
+                  <a href="#">Face Wash</a>
+                </li>
+                <li>
+                  <a href="#">Toner & Essence</a>
+                </li>
+                <li>
+                  <a href="#">Eye Treatment</a>
+                </li>
+                <li>
+                  <a href="#">Moisturizer & Facial Oil</a>
+                </li>
+                <li>
+                  <a href="#">Facial Mask</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="preview-card__modal modal fade"
+        id="category2Modal"
+        tabindex="-1"
+        aria-labelledby="category2Modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="category2Modal">Haircare</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a href="#">All Haircare</a>
+                </li>
+                <li>
+                  <a href="#">Shampoo</a>
+                </li>
+                <li>
+                  <a href="#">Conditioner</a>
+                </li>
+                <li>
+                  <a href="#">Scalp Treatment</a>
+                </li>
+                <li>
+                  <a href="#">Hair Mask</a>
+                </li>
+                <li>
+                  <a href="#">Bundle</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="preview-card__modal modal fade"
+        id="category6Modal"
+        tabindex="-1"
+        aria-labelledby="category6Modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="category6Modal">Staples</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a href="#">All Staples</a>
+                </li>
+                <li>
+                  <a href="#">Skin Staples</a>
+                </li>
+                <li>
+                  <a href="#">Body Staples</a>
+                </li>
+                <li>
+                  <a href="#">Hair Staples</a>
+                </li>
+                <li>
+                  <a href="#">Other Staples</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- Menu Section -->
+      <section class="preview">
+        <div class="preview-card">
+          <div
+            class="preview-card__img"
+            data-bs-toggle="modal"
+            data-bs-target="#skincareModal"
+          >
+            <img
+              src="https://thebathbox.co.id/assets/web/assets/images/preview-skincare.png"
+              alt="Skincare"
+            />
+            <h2>Skincare</h2>
+          </div>
+          <div class="preview-card__menu">
+            <h2>Skincare</h2>
+            <a href="#">Acne</a>
+            <a href="#">Dark Spots</a>
+            <a href="#">Dull Skin</a>
+            <a href="#">Redness</a>
+            <a href="#">Anti-aging</a>
+          </div>
+          <div
+            class="preview-card__modal modal fade"
+            id="skincareModal"
+            tabindex="-1"
+            aria-labelledby="skincareModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="skincareModal">Skin Concern</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      <a href="#">Acne</a>
+                    </li>
+                    <li>
+                      <a href="#">Dark Spots</a>
+                    </li>
+                    <li>
+                      <a href="#">Dull Skin</a>
+                    </li>
+                    <li>
+                      <a href="#">Redness</a>
+                    </li>
+                    <li>
+                      <a href="#">Anti-aging</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-card">
+          <div
+            class="preview-card__img"
+            data-bs-toggle="modal"
+            data-bs-target="#bodycareModal"
+          >
+            <img
+              src="https://thebathbox.co.id/assets/web/assets/images/preview-bodycare.png"
+              alt="Bodycare"
+            />
+            <h2>Bodycare</h2>
+          </div>
+          <div class="preview-card__menu">
+            <h2>Bodycare</h2>
+            <a href="#">Eczema</a>
+            <a href="#">Psoriasis</a>
+            <a href="#">Dryness</a>
+            <a href="#">Back Acne</a>
+            <a href="#">Body Odor</a>
+          </div>
+          <div
+            class="preview-card__modal modal fade"
+            id="bodycareModal"
+            tabindex="-1"
+            aria-labelledby="bodycareModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bodycareModal">Body Concern</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      <a href="#">Eczema</a>
+                    </li>
+                    <li>
+                      <a href="#">Psoriasis</a>
+                    </li>
+                    <li>
+                      <a href="#">Dryness</a>
+                    </li>
+                    <li>
+                      <a href="#">Back Acne</a>
+                    </li>
+                    <li>
+                      <a href="#">Body Odor</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-card">
+          <div
+            class="preview-card__img"
+            data-bs-toggle="modal"
+            data-bs-target="#haircareModal"
+          >
+            <img
+              src="https://thebathbox.co.id/assets/web/assets/images/preview-haircare.png"
+              alt="Haircare"
+            />
+            <h2>Haircare</h2>
+          </div>
+          <div class="preview-card__menu">
+            <h2>Haircare</h2>
+            <a href="#">Sensitive Scalp</a>
+            <a href="#">Oily Scalp</a>
+            <a href="#">Dandruff</a>
+            <a href="#">Hair Fall</a>
+            <a href="#">Hair Growth</a>
+          </div>
+          <div
+            class="preview-card__modal modal fade"
+            id="haircareModal"
+            tabindex="-1"
+            aria-labelledby="haircareModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="haircareModal">Hair Concern</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      <a href="#">Sensitive Scalp</a>
+                    </li>
+                    <li>
+                      <a href="#">Oily Scalp</a>
+                    </li>
+                    <li>
+                      <a href="#">Dandruff</a>
+                    </li>
+                    <li>
+                      <a href="#">Hair Fall</a>
+                    </li>
+                    <li>
+                      <a href="#">Hair Growth</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan Section -->
+      <section class="plan home-plan-bg">
+        <div class="content">
+          <h1>Make your Plan Now!</h1>
+          <p>
+            The Bath Box want to help you the need for natural and handmade skin and hair care treatment <br>
+            that actually works. Choose your personal favourites and add to your plan, schedule your orders <br>
+            or even pause or skip when you need to. It's super flexible and super simple!
+          </p>
+          <ul>
+            <li>
+              <div class="icon">
+                <span>1</span>
+                <svg
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M38.6249 4.66801C35.247 4.66797 33.0696 5.07038 30.5735 6.29214C29.6494 6.74447 28.7824 7.28922 27.9773 7.92474C27.2031 7.32485 26.3708 6.80511 25.4849 6.36695C22.9404 5.10844 20.6513 4.66797 17.3946 4.66797C8.67234 4.66797 2.33398 11.8949 2.33398 21.281C2.33398 28.3694 6.28626 35.2166 13.6479 41.8377C17.5121 45.3131 22.4457 48.7524 25.9791 50.5821L28.0007 51.6289L30.0222 50.5821C33.5556 48.7524 38.4892 45.3131 42.3534 41.8377C49.715 35.2166 53.6673 28.3694 53.6673 21.281C53.6673 11.9943 47.2692 4.7038 38.6249 4.66801ZM49.0006 21.281C49.0006 26.8344 45.7017 32.5497 39.2327 38.368C35.7057 41.5401 31.1716 44.7102 28.0007 46.3733C24.8297 44.7102 20.2956 41.5401 16.7686 38.368C10.2996 32.5497 7.00065 26.8344 7.00065 21.281C7.00065 14.346 11.3958 9.33464 17.3946 9.33464C19.984 9.33464 21.5796 9.64167 23.416 10.5499C24.5007 11.0864 25.4594 11.7948 26.2892 12.6801L28.0061 14.5116L29.7074 12.6656C30.5559 11.7449 31.5287 11.0203 32.6251 10.4836C34.4077 9.61112 35.9037 9.33464 38.6152 9.33465C44.5398 9.35921 49.0006 14.4422 49.0006 21.281Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <span>1</span>
+                <p>Choose your favorite product and add to your plan</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span>2</span>
+                <svg
+                  viewBox="0 0 59 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.8092 14.0013H14.9535V11.668H10.0978V18.668H48.9431V11.668H44.0875V14.0013H39.2318V11.668H19.8092V14.0013ZM48.9431 23.3346H10.0978V46.668H48.9431V23.3346ZM39.2318 7.0013H19.8092V4.66797H14.9535V7.0013H10.0978C7.41614 7.0013 5.24219 9.09064 5.24219 11.668V46.668C5.24219 49.2453 7.41614 51.3346 10.0978 51.3346H48.9431C51.6248 51.3346 53.7988 49.2453 53.7988 46.668V11.668C53.7988 9.09064 51.6248 7.0013 48.9431 7.0013H44.0875V4.66797H39.2318V7.0013ZM22.237 32.668H17.3813V28.0013H22.237V32.668ZM27.0927 32.668H31.9483V28.0013H27.0927V32.668ZM36.804 32.668V28.0013H41.6596V32.668H36.804ZM17.3813 42.0013H22.237V37.3346H17.3813V42.0013ZM31.9483 42.0013H27.0927V37.3346H31.9483V42.0013Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <span>2</span>
+                <p>Choose how often you want your plan delivered</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span>3</span>
+                <svg
+                  viewBox="0 0 59 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M39.9545 16.3346L44.3454 24.9324L50.9606 29.2501V37.3346H48.1704C47.1889 34.6159 44.5405 32.668 41.4274 32.668C38.3144 32.668 35.666 34.6159 34.6844 37.3346H24.3376C23.3561 34.6159 20.7077 32.668 17.5946 32.668C14.4815 32.668 11.8331 34.6159 10.8516 37.3346H8.06149V16.3346H39.9545ZM50.9606 42.0013H48.1704C47.1889 44.7201 44.5405 46.668 41.4274 46.668C38.3144 46.668 35.666 44.7201 34.6844 42.0013H24.3376C23.3561 44.7201 20.7077 46.668 17.5946 46.668C14.4815 46.668 11.8331 44.7201 10.8516 42.0013H8.06149C5.42899 42.0013 3.29492 39.912 3.29492 37.3346V16.3346C3.29492 13.7573 5.42899 11.668 8.06149 11.668H39.9545C41.7599 11.668 43.4104 12.6666 44.2178 14.2476L48.0426 21.7369L55.7271 26.7525V37.3346C55.7271 39.912 53.5931 42.0013 50.9606 42.0013ZM19.9779 39.668C19.9779 40.9566 18.9109 42.0013 17.5946 42.0013C16.2784 42.0013 15.2113 40.9566 15.2113 39.668C15.2113 38.3793 16.2784 37.3346 17.5946 37.3346C18.9109 37.3346 19.9779 38.3793 19.9779 39.668ZM43.8107 39.668C43.8107 40.9566 42.7437 42.0013 41.4274 42.0013C40.1112 42.0013 39.0442 40.9566 39.0442 39.668C39.0442 38.3793 40.1112 37.3346 41.4274 37.3346C42.7437 37.3346 43.8107 38.3793 43.8107 39.668Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <span>3</span>
+                <p>You'll receive regular deliveries</p>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center">
+            <a role="button" href="#" class="action"
+              >Shop and Make Your Plan</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorite Section -->
+      <section class="favorite row gx-xl-5">
+        <div class="text col-12 col-lg-6">
+          <h1>Everyone's Favourite</h1>
+          <p>
+            Our customer's most-loved face, body, hand and hair care. As with
+            all The <br />
+            Bath Box products, these best-sellers have been formulated without
+            <br />
+            irritating parabens, phenoxyethanol, paraffin oil sulphates.
+          </p>
+          <a href="#" class="action">
+            <span>View All Products</span>
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.5858 10.0001H0V8.00008H14.5858L8.29289 1.70718L9.70711 0.292969L18.4142 9.00008L9.70711 17.7072L8.29289 16.293L14.5858 10.0001Z"
+                fill="#643E29"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="grid-favorite product-grid col-12 col-lg-6 pe-0">
+          <div class="row gx-xl-5 gy-xl-5">
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-245"
+              product="245"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/jade_galacto-1.jpg"
+                    alt="Jade Galacto"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/jade_galacto-2.jpg"
+                    alt="Jade Galacto"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(245, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(245, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-69 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="245"
+                      data='{"id":69,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_245_1_16022023181047_BWRQ56.jpg","sku":"SALVIADEODORANT30ML","name":"30ML","quantity":845,"price":170000,"discount_percent":20,"discount":34000,"amount":136000,"price_display":170000,"discount_display":34000,"amount_display":136000,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >30ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Jade Galacto</h5>
+                    <p>
+                      <a href="#">Skincare</a>
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">120,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280.000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-271"
+              product="271"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/salvia-1.jpg"
+                    alt="SALVIA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/salvia-2.jpg"
+                    alt="SALVIA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(271, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(271, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-68 disabled"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":68,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_3_02012023172345_QCK2ZW.jpg","sku":"GDLORI30ML","name":"30ML","quantity":0,"price":25300,"discount_percent":0,"discount":0,"amount":25300,"price_display":25300,"discount_display":0,"amount_display":25300,"campaigns":[],"default":0}'
+                      >50ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-29 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":29,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_1_15022023093557_9G0WC4.jpg","sku":"GDLORI300ML","name":"300ML","quantity":759,"price":129000,"discount_percent":20,"discount":25800,"amount":103200,"price_display":129000,"discount_display":25800,"amount_display":103200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >150ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-144"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":144,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_4_15022023093557_9G0WC4.jpg","sku":"REFILLORI500ML","name":"REFILL 500ML","quantity":388,"price":166500,"discount_percent":20,"discount":33300,"amount":133200,"price_display":166500,"discount_display":33300,"amount_display":133200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":0}'
+                      >200ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-30"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":30,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_2_15022023093557_9G0WC4.jpg","sku":"GDLORI500ML","name":"500ML","quantity":1232,"price":199000,"discount_percent":10,"discount":19900,"amount":179100,"price_display":199000,"discount_display":19900,"amount_display":179100,"campaigns":{"price":{"id":560,"name":"Daily Promo Mei 2023 - discount 10%"}},"default":0}'
+                      >250ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Salvia</h5>
+                    <p>
+                      <a href="https://thebathbox.co.id/search?q=Liquid Soap"
+                        >Deodorant</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">136,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">170,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-271"
+              product="271"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/salvia-1.jpg"
+                    alt="SALVIA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/salvia-2.jpg"
+                    alt="SALVIA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(271, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(271, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-68 disabled"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":68,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_3_02012023172345_QCK2ZW.jpg","sku":"GDLORI30ML","name":"30ML","quantity":0,"price":25300,"discount_percent":0,"discount":0,"amount":25300,"price_display":25300,"discount_display":0,"amount_display":25300,"campaigns":[],"default":0}'
+                      >50ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-29 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":29,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_1_15022023093557_9G0WC4.jpg","sku":"GDLORI300ML","name":"300ML","quantity":759,"price":129000,"discount_percent":20,"discount":25800,"amount":103200,"price_display":129000,"discount_display":25800,"amount_display":103200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >150ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-144"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":144,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_4_15022023093557_9G0WC4.jpg","sku":"REFILLORI500ML","name":"REFILL 500ML","quantity":388,"price":166500,"discount_percent":20,"discount":33300,"amount":133200,"price_display":166500,"discount_display":33300,"amount_display":133200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":0}'
+                      >200ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-30"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":30,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_2_15022023093557_9G0WC4.jpg","sku":"GDLORI500ML","name":"500ML","quantity":1232,"price":199000,"discount_percent":10,"discount":19900,"amount":179100,"price_display":199000,"discount_display":19900,"amount_display":179100,"campaigns":{"price":{"id":560,"name":"Daily Promo Mei 2023 - discount 10%"}},"default":0}'
+                      >250ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Salvia</h5>
+                    <p>
+                      <a href="https://thebathbox.co.id/search?q=Liquid Soap"
+                        >Deodorant</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">136,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">170,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-favorite owl-carousel owl-theme owl-loaded owl-drag"
+          style=""
+        >
+          <div class="owl-stage-outer">
+            <div
+              class="owl-stage"
+              style="
+                transform: translate3d(0px, 0px, 0px);
+                transition: all 0.75s ease 0s;
+                width: 1384px;
+              "
+            >
+              <div
+                class="owl-item active"
+                style="width: 326px; margin-right: 20px"
+              >
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-245"
+              product="245"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/jade_galacto-1.jpg"
+                    alt="Jade Galacto"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/jade_galacto-2.jpg"
+                    alt="Jade Galacto"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(245, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(245, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-69 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="245"
+                      data='{"id":69,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_245_1_16022023181047_BWRQ56.jpg","sku":"SALVIADEODORANT30ML","name":"30ML","quantity":845,"price":170000,"discount_percent":20,"discount":34000,"amount":136000,"price_display":170000,"discount_display":34000,"amount_display":136000,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >30ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Jade Galacto</h5>
+                    <p>
+                      <a href="#">Skincare</a>
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">120,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280.000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 326px; margin-right: 20px">
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 326px; margin-right: 20px">
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-271"
+              product="271"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/salvia-1.jpg"
+                    alt="SALVIA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/salvia-2.jpg"
+                    alt="SALVIA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(271, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(271, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-68 disabled"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":68,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_3_02012023172345_QCK2ZW.jpg","sku":"GDLORI30ML","name":"30ML","quantity":0,"price":25300,"discount_percent":0,"discount":0,"amount":25300,"price_display":25300,"discount_display":0,"amount_display":25300,"campaigns":[],"default":0}'
+                      >50ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-29 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":29,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_1_15022023093557_9G0WC4.jpg","sku":"GDLORI300ML","name":"300ML","quantity":759,"price":129000,"discount_percent":20,"discount":25800,"amount":103200,"price_display":129000,"discount_display":25800,"amount_display":103200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >150ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-144"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":144,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_4_15022023093557_9G0WC4.jpg","sku":"REFILLORI500ML","name":"REFILL 500ML","quantity":388,"price":166500,"discount_percent":20,"discount":33300,"amount":133200,"price_display":166500,"discount_display":33300,"amount_display":133200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":0}'
+                      >200ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-30"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":30,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_2_15022023093557_9G0WC4.jpg","sku":"GDLORI500ML","name":"500ML","quantity":1232,"price":199000,"discount_percent":10,"discount":19900,"amount":179100,"price_display":199000,"discount_display":19900,"amount_display":179100,"campaigns":{"price":{"id":560,"name":"Daily Promo Mei 2023 - discount 10%"}},"default":0}'
+                      >250ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Salvia</h5>
+                    <p>
+                      <a href="https://thebathbox.co.id/search?q=Liquid Soap"
+                        >Deodorant</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">136,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">170,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 326px; margin-right: 20px">
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 326px; margin-right: 20px">
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-271"
+              product="271"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/salvia-1.jpg"
+                    alt="SALVIA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/salvia-2.jpg"
+                    alt="SALVIA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(271, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(271, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-68 disabled"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":68,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_3_02012023172345_QCK2ZW.jpg","sku":"GDLORI30ML","name":"30ML","quantity":0,"price":25300,"discount_percent":0,"discount":0,"amount":25300,"price_display":25300,"discount_display":0,"amount_display":25300,"campaigns":[],"default":0}'
+                      >50ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-29 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":29,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_1_15022023093557_9G0WC4.jpg","sku":"GDLORI300ML","name":"300ML","quantity":759,"price":129000,"discount_percent":20,"discount":25800,"amount":103200,"price_display":129000,"discount_display":25800,"amount_display":103200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":1}'
+                      >150ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-144"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":144,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_4_15022023093557_9G0WC4.jpg","sku":"REFILLORI500ML","name":"REFILL 500ML","quantity":388,"price":166500,"discount_percent":20,"discount":33300,"amount":133200,"price_display":166500,"discount_display":33300,"amount_display":133200,"campaigns":{"price":{"id":559,"name":"Daily Promo Mei 2023 - discount 20%"}},"default":0}'
+                      >200ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-30"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="271"
+                      data='{"id":30,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_271_2_15022023093557_9G0WC4.jpg","sku":"GDLORI500ML","name":"500ML","quantity":1232,"price":199000,"discount_percent":10,"discount":19900,"amount":179100,"price_display":199000,"discount_display":19900,"amount_display":179100,"campaigns":{"price":{"id":560,"name":"Daily Promo Mei 2023 - discount 10%"}},"default":0}'
+                      >250ML</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Salvia</h5>
+                    <p>
+                      <a href="https://thebathbox.co.id/search?q=Liquid Soap"
+                        >Deodorant</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">136,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">170,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 326px; margin-right: 20px">
+                <div class="item">
+                  <div
+              class="product-card col-lg-6 pe-0 product-selection product-270"
+              product="270"
+              element="grid-favorite"
+            >
+              <div class="product-card__image hoverable">
+                <a href="#">
+                  <img
+                    class="image"
+                    src="../assets/images/kombucha-1.jpg"
+                    alt="KOMBUCHA"
+                  />
+                  <img
+                    class="image hover"
+                    src="../assets/images/kombucha-2.jpg"
+                    alt="KOMBUCHA"
+                  />
+                </a>
+                <!--<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalProduct" onclick="popupProduct(270, 'grid-favorite')"><img class="icon" src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg" alt="Cart Icon" /></a>-->
+                <a
+                  href="javascript:void(0)"
+                  onclick="addToBag(270, 'grid-favorite')"
+                  ><img
+                    class="icon"
+                    src="https://thebathbox.co.id/assets/web/assets/images/icons/cart.svg"
+                    alt="Cart Icon"
+                /></a>
+                <span class="label discount-percent hidden">0% OFF</span>
+                <div class="campaign-free-info hidden"></div>
+              </div>
+              <div class="product-card__detail">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-44"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":44,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/variant_270_1_20022023093439_QR16XV.jpg","sku":"BRASSICA15ML","name":"15ML","quantity":152,"price":158000,"discount_percent":35,"discount":55300,"amount":102700,"price_display":158000,"discount_display":55300,"amount_display":102700,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":0}'
+                      >15ML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="variant-selection variant-45 default"
+                      onclick="changeVariant(this, '.grid-favorite')"
+                      product="270"
+                      data='{"id":45,"image":"https:\/\/thebathbox.co.id\/assets\/images\/catalog\/product\/product_variant_45_07022023100235_MQOO9V.jpeg","sku":"BRASSICA30ML","name":"30ML ","quantity":1871,"price":280500,"discount_percent":35,"discount":98175,"amount":182325,"price_display":280500,"discount_display":98175,"amount_display":182325,"campaigns":{"price":{"id":558,"name":"Daily Promo Mei 2023 - discount 35%"}},"default":1}'
+                      >30ML
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <div class="product--title me-2">
+                    <h5>Kombucha</h5>
+                    <p>
+                      <a
+                        href="https://thebathbox.co.id/search?q=Lightening Facial Serum"
+                        >Bodycare</a
+                      >
+                    </p>
+                  </div>
+                  <div class="product--price">
+                    <h5>
+                      <small>IDR</small><span class="price-after">128,000</span>
+                    </h5>
+                    <p class="hidden">
+                      <small>IDR</small
+                      ><span class="price-before">280,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="action">
+          <span>View All Product</span>
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 10.0001H0V8.00008H14.5858L8.29289 1.70718L9.70711 0.292969L18.4142 9.00008L9.70711 17.7072L8.29289 16.293L14.5858 10.0001Z" fill="#643E29"></path>
+          </svg>
+      </a>
+      </section>
+
+      <!-- Review Section -->
+      <section class="review position-relative mt-0 mb-0">
+        <div class="carousel-review vertical-dots owl-carousel owl-theme">
+          <div class="item">
+            <div class="row gx-lg-4">
+              <div class="order-2 order-lg-1 text col-lg-6">
+                <h2>Our Impeccable<br />Reviews</h2>
+                <p class="subtitle">
+                  4.5 out of 5 stars from over 2,5K++ reviews.
+                </p>
+                <span>4.5</span>
+                <div class="name">
+                  <h5>Annisa</h5>
+                </div>
+                <p>
+                  Salvia is just phenomenal! It really does reduce body odor to
+                  the max. Feeling confident even when I'm sweaty, because the
+                  bad smell is no more.
+                  <br /><br />
+                  This also smoothens the underarm's skin, even though it was
+                  dry and seemingly piled up with dead skin cells. There's no
+                  itching or stinging at all!
+                  <br /><br />
+                  Didn't know why, but my previous deodorants used to be painful
+                  on the underarms. Using Salvia never hurts, plus it doesn't
+                  leave any stain on the clothes.
+                  <br /><br />
+                  Love Salvia so very much :)
+                </p>
+              </div>
+              <div class="order-1 order-lg-2 col-lg-6">
+                <a href="#">
+                  <img
+                    src="https://thebathbox.co.id/assets/images/temp/review-salvia.jpg"
+                    alt="Salvia"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row gx-lg-4">
+              <div class="order-2 order-lg-1 text col-lg-6">
+                <h2>Our Impeccable<br />Reviews</h2>
+                <p class="subtitle">
+                  4.8 out of 5 stars from over 11k++ reviews.
+                </p>
+                <span>4.8</span>
+                <div class="name">
+                  <h5>Marina</h5>
+                </div>
+                <p>
+                  Just wanna update you on my back acne progress with Goats
+                  Don't Lie. At first, I didn't expect to cure this with only a
+                  liquid soap, but I'm so pleased to see my back clearing up
+                  with brighter skin now.
+                  <br /><br />
+                  I almost gave up after my 10 years of back acne worsened from
+                  many failed doctor's visits. Nonetheless, I still tried to
+                  follow my friend's recommendation to use Goats Don't Lie, and
+                  voila! It has really worked wonders ever since.
+                </p>
+              </div>
+              <div class="order-1 order-lg-2 col-lg-6">
+                <a href="#">
+                  <img
+                    src="https://thebathbox.co.id/assets/images/temp/review-gdl.jpg"
+                    alt="GDL"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row gx-lg-4">
+              <div class="order-2 order-lg-1 text col-lg-6">
+                <h2>Our Impeccable<br />Reviews</h2>
+                <p class="subtitle">
+                  4.7 out of 5 stars from over 10K++ reviews.
+                </p>
+                <span>4.7</span>
+                <div class="name">
+                  <h5>Miami</h5>
+                </div>
+                <p>
+                  I'm officially a fan of Brassica Serum by The Bath Box.
+                  <br /><br />
+                  My skin improved so well, from persistent pimples, bad
+                  breakouts, dullness, lots of acne scars, and big pores to how
+                  it is right now ━ clean, even skin tone, no pimple nor acne
+                  scars, with brighter and with tighter pores!
+                </p>
+              </div>
+              <div class="order-1 order-lg-2 col-lg-6">
+                <a href="#">
+                  <img
+                    src="https://thebathbox.co.id/assets/images/temp/review-brassica.jpg"
+                    alt="Brassica"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if ($(".carousel-favorite").length) {
+          $(".carousel-favorite").owlCarousel({
+            loop: false,
+            autoplay: true,
+            center: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            rewind: true,
+            margin: 20,
+            nav: false,
+            dots: true,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 2,
+              },
+              1200: {
+                items: 4,
+              },
+            },
+          });
+        }
+        if ($(".carousel-review").length) {
+          var _owlReview = $(".carousel-review");
+          _owlReview.owlCarousel({
+            loop: true,
+            autoplay: true,
+            center: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            margin: 10,
+            animateOut: "slideOutUp",
+            animateIn: "slideInUp",
+            nav: false,
+            dots: true,
+            items: 1,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                dots: true,
+                animateOut: false,
+                animateIn: false,
+              },
+              1024: {
+                dots: true,
+                animateOut: "slideOutUp",
+                animateIn: "slideInUp",
+              },
+            },
+          });
+        }
+      });
+    </script>
+    <footer class="footer">
+      <div class="footer__head row gx-4">
+        <div class="col-lg-6">
+          <h2>Join The Club</h2>
+          <p class="hidden">
+            Get your personalized products based on your needs and get our warm
+            greetings along with the best vouchers from us
+          </p>
+        </div>
+        <div class="col-lg-6 input">
+          <form id="form_newsletter" method="post" onsubmit="return false">
+            <div class="input__subscribe-mail">
+              <label for="subscribe">subscribe</label>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Type your e-mail here"
+                  required
+                />
+                <button
+                  type="button"
+                  class="submit"
+                  onclick="confirmNewsletter()"
+                >
+                  JOIN
+                </button>
+              </div>
+            </div>
+            <div class="greeting-subscribe-mail hidden">
+              <h5></h5>
+              <p></p>
+            </div>
+          </form>
+        </div>
+        <p class="responsive-description hidden">
+          Get your personalized products based on your needs and get our warm
+          greetings along with the best vouchers from us
+        </p>
+      </div>
+      <div class="footer__menu row gx-4">
+        <div class="col-6 col-lg-3">
+          <div class="footer__menu--item">
+            <h6>Order & Support</h6>
+            <ul class="column">
+              <li>
+                <a class="link-menu menu-refund-policy" href="#"> Return </a>
+              </li>
+              <li>
+                <a class="link-menu menu-terms-of-use" href="#">
+                  Term Of Use
+                </a>
+              </li>
+              <li>
+                <a class="link-menu menu-privacy-policy" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="footer__menu--item">
+            <h6>Info</h6>
+            <ul class="column">
+              <li>
+                <a class="link-menu menu-faq" href="#"> FAQ </a>
+              </li>
+              <li>
+                <a class="link-menu menu-join-reseller" href="#">
+                  Be Our Reseller
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Career</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+          <div class="footer__menu--item">
+            <h6>Contact Us</h6>
+            <div class="icon-list">
+              <a href="mailto:cs@thebathbox.co.id">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/mail.svg"
+                  alt="Email The Bath Box Official Website "
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/whatsapp.svg"
+                  alt="Whats App The Bath Box Official Website "
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="footer__menu--item">
+            <h6>Follow Us</h6>
+            <div class="icon-list">
+              <a href="#">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/facebook.svg"
+                  alt="Facebook The Bath Box Official Website "
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/instagram.svg"
+                  alt="Instagram The Bath Box Official Website "
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/tiktok.svg"
+                  alt="Tiktok The Bath Box Official Website "
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/youtube.svg"
+                  alt="Youtube The Bath Box Official Website "
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://thebathbox.co.id/assets/web/assets/images/icons/twitter.svg"
+                  alt="Twitter The Bath Box Official Website "
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="separator" />
+      <div class="footer__copyright">
+        <div>
+          <h4>The Bath Box</h4>
+          <p>Copyright © 2023. All rights reserved</p>
+        </div>
+        <div>
+          <img
+            src="https://thebathbox.co.id/assets/web/assets/images/badan-pom.png"
+            alt="BPOM"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/web/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/web/assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/plugins/js/owl.carousel.min.js"></script>
+    <script
+      src="../assets/plugins/js/datatables.bundle.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/plugins/js/js/picedit.js"
+      type="text/javascript"
+    ></script>
+    <script src="../assets/plugins/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/plugins/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/js/toastr.min.js"></script>
+    <script src="../assets/plugins/js/jquery.star-rating-svg.min.js"></script>
+    <script src="../assets/plugins/js/select2.min.js"></script>
+    <script src="../assets/plugins/js/select2.full.min.js"></script>
+    <script src="../assets/plugins/js/moment.min.js"></script>
+    <script src="../assets/plugins/js/daterangepicker.js"></script>
+    <script src="../assets/web/assets/js/script.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+
+    <div id="loading">
+      <div class="img-loading">
+        <img
+          src="https://thebathbox.co.id/assets/images/loading-new.gif"
+          alt="The Bath Box Official Website "
+        />
+      </div>
+    </div>
+
+    <div class="modal modal-quick fade" id="form_dialog">
+      <div class="modal-dialog position-relative"></div>
+    </div>
+
+    <div class="modal modal-quick fade" id="form_dialog_detail">
+      <div class="modal-dialog position-relative"></div>
+    </div>
+
+    <div
+      class="modal fade modal--cart"
+      id="modalProduct"
+      tabindex="-1"
+      aria-labelledby="modalProductLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog"></div>
+    </div>
+
+    <div
+      class="subscription__modal modal fade"
+      id="subscriptionModal"
+      tabindex="-1"
+      aria-labelledby="subscriptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>
+              Subscribe to get notified with our latest news and updates. You
+              may disable this feature anytime.
+            </p>
+            <div>
+              <button
+                type="button"
+                class="btn btn--secondary modal-close"
+                data-bs-dismiss="modal"
+              >
+                Later
+              </button>
+              <button
+                type="button"
+                class="btn btn--primary"
+                onclick="submitNewsletter()"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal-info modal fade"
+      id="infoModal"
+      tabindex="-1"
+      aria-labelledby="infoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close modal-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <p class="message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatsapp">
+      <a
+        href="#"
+        class="whatsapp-button"
+        onclick="whatsappClick()"
+        target="_blank"
+      >
+        <svg
+          width="96"
+          height="96"
+          viewBox="0 0 96 96"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        ></svg>
+      </a>
+    </div>
+
+    <div class="scroll-to-top">
+      <a href="javascript:void(0)" onclick="scrollToTop()"
+        ><i class="fa fa-arrow-circle-up"></i
+      ></a>
+    </div>
+
+    <script type="text/javascript">
+      if ($(".link-menu.menu-home").length) {
+        $(".link-menu.menu-home").addClass("active");
+      }
+    </script>
+  </body>
+</html>
